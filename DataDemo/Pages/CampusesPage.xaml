@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataDemo.Pages.CampusesPage"
+             Title="CampusesPage">
+    <VerticalStackLayout>
+        <Label 
+            Text="Campuses"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <ListView x:Name="CampusesListView"/>
+        <Label Text="Enter name of new campus to add"/>
+        <Entry x:Name="CampusEntry"/>
+        <Button x:Name="AddCampusButton"
+            Text="Add Campus"
+            Clicked="AddCampusButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

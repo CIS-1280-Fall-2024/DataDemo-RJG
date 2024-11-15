@@ -7,8 +7,6 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-            <Label Text="Campuses"/>
-            <ListView x:Name="CampusesListView"/>
             <Label Text="Majors"/>
             <ListView x:Name="MajorsListView"/>
             <Label Text="Courses"/>

@@ -30,6 +30,14 @@ namespace DataDemo.Data
             return campuses;
         }
 
+        public void AddCampus(Campus campus)
+        {
+            using SqlConnection conn = new SqlConnection(Settings.ConnStr);
+            SqlCommand cmd = new SqlCommand($"INSERT INTO Campus (Name) VALUES ('{campus.Name}');", conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+        }
+
         public List<Major> GetMajors()
         {
             using SqlConnection conn = new SqlConnection(Settings.ConnStr);
